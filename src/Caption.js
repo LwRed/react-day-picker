@@ -52,7 +52,7 @@ export default class Caption extends Component {
     } = this.props;
     return (
       <div className={classNames.caption} role="heading">
-        <div onClick={onClick} onKeyUp={this.handleKeyUp}>
+        <div onClick={onClick}>
           {months
             ? `${months[date.getMonth()]} ${date.getFullYear()}`
             : localeUtils.formatMonthTitle(date, locale)}

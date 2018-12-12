@@ -123,7 +123,6 @@ export default class Navbar extends Component {
         aria-label={labels.previousMonth}
         key="previous"
         className={previousClassName}
-        onKeyDown={shouldShowPrevious ? previousKeyDownHandler : undefined}
         onClick={shouldShowPrevious ? previousClickHandler : undefined}
       />
     );
@@ -135,7 +134,6 @@ export default class Navbar extends Component {
         aria-label={labels.nextMonth}
         key="right"
         className={nextClassName}
-        onKeyDown={shouldShowNext ? nextKeyDownHandler : undefined}
         onClick={shouldShowNext ? nextClickHandler : undefined}
       />
     );

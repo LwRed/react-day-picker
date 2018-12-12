@@ -109,7 +109,6 @@ export default class Month extends Component {
         ariaSelected={dayModifiers.indexOf('selected') > -1}
         onClick={this.props.onDayClick}
         onFocus={this.props.onDayFocus}
-        onKeyDown={this.props.onDayKeyDown}
         onMouseEnter={this.props.onDayMouseEnter}
         onMouseLeave={this.props.onDayMouseLeave}
         onMouseDown={this.props.onDayMouseDown}
@@ -194,13 +193,6 @@ export default class Month extends Component {
                     onClick={
                       onWeekClick
                         ? e => onWeekClick(weekNumber, week, e)
-                        : undefined
-                    }
-                    onKeyUp={
-                      onWeekClick
-                        ? e =>
-                            e.keyCode === ENTER &&
-                            onWeekClick(weekNumber, week, e)
                         : undefined
                     }
                   >

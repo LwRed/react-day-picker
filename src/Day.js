@@ -141,7 +141,6 @@ export default class Day extends Component {
         aria-disabled={ariaDisabled}
         aria-selected={ariaSelected}
         onClick={handleEvent(onClick, day, modifiers)}
-        onKeyDown={handleEvent(onKeyDown, day, modifiers)}
         onMouseEnter={handleEvent(onMouseEnter, day, modifiers)}
         onMouseLeave={handleEvent(onMouseLeave, day, modifiers)}
         onMouseUp={handleEvent(onMouseUp, day, modifiers)}

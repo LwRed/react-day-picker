@@ -600,7 +600,6 @@ export class DayPicker extends Component {
               ? this.props.tabIndex
               : -1
           }
-          onKeyDown={this.handleKeyDown}
           onFocus={this.props.onFocus}
           onBlur={this.props.onBlur}
         >
